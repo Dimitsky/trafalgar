@@ -1,0 +1,497 @@
+@media screen and (max-width: 1439px) {
+  /* html */
+
+  :root {
+    font-size: 14px;
+  }
+
+  /* .btn */
+
+  .btn {
+    min-width: 150px;
+    font-size: 1rem;
+    line-height: 2.5;
+  }
+
+  /* .hero */
+
+  .hero {
+    background-size: 5%;
+  }
+
+  .hero__container {
+    background: no-repeat right top 15% url('../img/hero/hero-1.webp');
+    background-size: 50vw;
+  }
+
+  /* .services */
+
+  .services__container {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+
+  /* .advantages */
+
+  .advantages {
+    background: no-repeat left 15% top 30% / 35% url('../img/advantages/advantages-bg.webp'),
+              no-repeat right bottom 8% / 5% url('../img/advantages/advantages-bg-2.webp');
+  }
+
+  /* .download */
+
+  .download__container {
+    padding-bottom: 150px;
+    background: no-repeat right 2px top 30% / 45% url('../img/download/download-bg.webp');
+  }
+
+  .btn-download__icon {
+    height: 11.63px;
+    width: 8px;
+  }
+
+  /* .reviews */
+
+  .swiper-reviews__slide {
+    padding: 60px;
+    background: no-repeat right -3.5% top -8% / 10% url('../img/reviews/reviews-bg.png'), 
+              linear-gradient(180deg, rgba(103,195,243,1) 0%, rgba(90,152,242,1) 100%);
+  }
+
+  /* .articles */
+
+  .articles {
+    background: no-repeat right top 0px url('../img/articles/bg-1.webp'), 
+              no-repeat left 2% top 15% / 8% url('../img/articles/bg-2.webp'), 
+              no-repeat right 5% bottom -3% / 10%  url('../img/articles/bg-3.webp');
+  }
+
+  .articles__container {
+    padding-bottom: 150px;
+  }
+
+  .item-articles__img-wrap {
+    height: 23.5vw;
+  }
+
+  .item-articles__body {
+    height: calc( 100% - 23.5vw );
+  }
+
+  /* .footer */
+
+  .footer {
+    background: no-repeat left bottom 0% / 6% url('../img/footer/bg-1.webp'),
+              linear-gradient( 180deg, #67C3F3, #5A98F2 );
+  }
+
+  .footer__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  :root {
+    font-size: 14px;
+    --title-rate: .8;
+  }
+
+  /* .button */
+
+  .btn {
+    min-width: 150px;
+    line-height: 2.5;
+  }
+
+  /* .burger */
+
+  .burger:hover span {
+    background-color: #000;
+  }
+
+  .js .burger {
+    display: block;
+  }
+
+  /* .header */
+
+  .header {
+    position: relative;
+  }
+
+  .header__container {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 70px;
+  }
+
+  .header__logo {
+    justify-content: flex-start;
+  }
+
+  .nav-header__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9000;
+    display: block;
+    padding: 70px 32px;
+    height: 100vh;
+    min-width: 300px;
+    background: #66bef3;
+    overflow: hidden;
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: transform .3s ease, visibility 0s .3s; 
+  }
+
+  .nav-header__list.active {
+    transform: translateX(0px);
+    transition:  transform .3s ease, visibility 0s 0s;
+    visibility: visible;
+  }
+
+  .nav-header__item:not(:last-child) {
+    margin: 0 0 20px;
+  }
+
+  /* .hero */
+
+  .hero {
+    background: none;
+  }
+
+  .hero__container {
+    padding-bottom: 50px;
+    background: none;
+  }
+
+  /* .services */
+
+  .services, 
+  .services__container {
+    background: none;
+  }
+
+  .services__container {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+
+  .services__item {
+    width: calc( 50% - 34px );
+  }
+
+  /* .advantages */
+
+  .advantages {
+    background: no-repeat left 15% top 30% / 30% url('../img/advantages/advantages-bg.webp'),
+              no-repeat right bottom 8% / 5% url('../img/advantages/advantages-bg-2.webp');
+  }
+
+  .advantages__container {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+
+  /* .download */
+
+  .download__container {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+
+  .download__body {
+    padding-left: 0;
+    max-width: 400px;
+  }
+
+  /* .reviews */
+
+  .reviews__container {
+    padding-bottom: 50px;
+  }
+
+  .swiper-reviews__slide {
+    padding: 30px;
+  }
+
+  .slide-swiper-reviews__wrap {
+    margin-right: 30px;
+  }
+
+  .slide-swiper-reviews__title {
+    padding-bottom: 30px;
+  }
+
+  .slide-swiper-reviews__p {
+    flex-basis: 320px;
+  }
+
+  /* .articles */
+
+  .articles__container {
+    padding-bottom: 50px;
+  }
+
+  .articles__item {
+    width: calc( 50% - 34px);
+  }
+
+  /* .footer */
+
+  .footer__col:nth-child(1) {
+    flex-basis: 300px;
+  }
+
+  .footer__col:last-child {
+    flex-basis: 120px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* .container */
+
+  .container {
+    padding: 0 12px;
+  }
+
+  /* .h */
+
+  .h--2 {
+    text-align: center;
+  }
+
+  .h--2--left::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* .btn */
+
+  .btn {
+    min-width: 100px;
+    font-size: .8rem;
+  }
+
+  /* .burger */
+
+  .burger {
+    left: 12px;
+  }
+
+  /* .header */
+
+  .logo-header__icon {
+    --size: 25px;
+    height: var(--size);
+    width: var(--size);
+  }
+
+  .nav-header__list {
+    right: 0;
+    padding-right: 24px;
+    padding-left: 24px;
+    min-width: auto;
+  }
+
+  /* .hero */
+
+  .hero__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .hero__body {
+    max-width: none;
+  }
+
+  .hero__title {
+    text-align: center;
+  }
+
+  .hero__btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* .services */
+
+  .services__container {
+    padding-bottom: 50px;
+  }
+
+  .services__list {
+    display: block;
+    margin: 0;
+  }
+
+  .services__item {
+    margin: 0 auto 24px;
+    width: 100%;    
+    max-width: 400px;
+  }
+
+  .item-services__icon-wrap {
+    justify-content: center;
+    height: 70px;
+  }
+
+  .item-services__icon {
+    height: 100%;
+  }
+
+  .item-services__title {
+    text-align: center;
+  }
+
+  /* .advantages */
+
+  .advantages {
+    background: none;
+  }
+
+  .advantages__container {
+    display: block;
+    padding-bottom: 50px;
+  }
+
+  .advantages__body, 
+  .advantages__p {
+    max-width: none;
+  }
+
+  .advantages__btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* .download */
+
+  .download__container {
+    padding-bottom: 50px;
+    background: none;
+  }
+
+  .download__body {
+    padding: 0;
+    max-width: unset;
+  }
+
+  .download__btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .btn-download__icon {
+    height: 8.72px;
+    width: 6px;
+  }
+
+  /* .reviews */
+
+  .reviews__container {
+    padding-bottom: 50px;
+    background: none;
+  }
+
+  .swiper-reviews__slide {
+    padding: 20px;
+  }
+
+  .slide-swiper-reviews__wrap {
+    display: block;
+    margin: 0 0 20px;
+  }
+
+  .slide-swiper-reviews__body {
+    flex-direction: column;
+  }
+
+  .slide-swiper-reviews__img {
+    margin: 0;
+    width: 100%;
+  }
+
+  .slide-swiper-reviews__title {
+    margin-bottom: 40px;
+  }
+
+  .slide-swiper-reviews__p {
+    flex-basis: unset;
+  }
+
+  .swiper-reviews__wrapper {
+    margin-bottom: 20px;
+  }
+
+  .swiper-reviews__nav {
+    justify-content: space-between;
+  }
+
+  .swiper-reviews__pagination {
+    margin-right: 20px;
+  }
+
+  .swiper-reviews__btn--prev {
+    margin-right: 20px;
+  }
+
+  .swiper-reviews__btn:hover {
+    transform: none;
+  }
+
+  /* .articles */
+
+  .articles {
+    background: none;
+  }
+
+  .articles__container {
+    padding-bottom: 50px;
+  }
+
+  .articles__list {
+    display: block;
+    margin: 0;
+  }
+
+  .articles__item {
+    margin: 0 0 24px;
+    width: 100%;
+  }
+
+  .item-articles__img-wrap {
+    height: 60vw;
+  }
+
+  .item-articles__body {
+    padding: 24px;
+  }
+
+  /* .footer */
+
+  .footer {
+    background: no-repeat left bottom 0% / 15% url('../img/footer/bg-1.webp'),
+              linear-gradient( 180deg, #67C3F3, #5A98F2 );
+  }
+
+  .footer__container {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer__col:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .footer__title {
+    margin-bottom: 0px;
+  }
+}
